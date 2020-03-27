@@ -46,6 +46,15 @@
 
   <title>Hello World | 皮克斯XYZ字幕组</title>
   
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162071056-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-162071056-1');
+      }
+    </script>
 
 
 
@@ -177,13 +186,6 @@
             </span>
 
           
-            <span id="/2020/03/27/hello-world/" class="post-meta-item leancloud_visitors" data-flag-title="Hello World" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
   
   <span class="post-meta-item">
     
@@ -423,7 +425,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
       avatar     : 'mm',
       meta       : guest,
       pageSize   : '10' || 10,
-      visitor    : true,
+      visitor    : false,
       lang       : '' || 'zh-cn',
       path       : location.pathname,
       recordIP   : true,

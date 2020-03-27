@@ -42,6 +42,15 @@
 
   <title>归档 | 皮克斯XYZ字幕组</title>
   
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162071056-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-162071056-1');
+      }
+    </script>
 
 
 
@@ -376,7 +385,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
       avatar     : 'mm',
       meta       : guest,
       pageSize   : '10' || 10,
-      visitor    : true,
+      visitor    : false,
       lang       : '' || 'zh-cn',
       path       : location.pathname,
       recordIP   : true,
